@@ -1,4 +1,7 @@
 import Component from '@glint/environment-ember-loose/glimmer-component';
+import { action } from '@ember/object';
+import { createPopper } from '@popperjs/core';
+import { assert } from '@ember/debug';
 
 export interface PositionerSignature {
   Element: null;
@@ -11,7 +14,12 @@ export interface PositionerSignature {
 }
 
 export default class Positioner extends Component<PositionerSignature> {
-  jeff = false;
+  @action
+  didInsert(element: HTMLElement): void {
+    let anchor = document.querySelector('.anchor');
+    assert('anchor is an HTMLElement', anchor instanceof HTMLElement);
+    createPopper(anchor, element);
+  }
 }
 
 declare module '@glint/environment-ember-loose/registry' {
