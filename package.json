@@ -1,13 +1,13 @@
 {
   "name": "ember-positioner",
   "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "A content-positioning component based on Popper.js",
   "keywords": [
     "ember-addon"
   ],
-  "repository": "",
+  "repository": "https://github.com/tildeio/ember-positioner",
   "license": "MIT",
-  "author": "",
+  "author": "Tilde Engineering <engineering@tilde.io> (https://tilde.io)",
   "directories": {
     "doc": "doc",
     "test": "tests"
