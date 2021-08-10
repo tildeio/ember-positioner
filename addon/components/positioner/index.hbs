@@ -1,9 +1,29 @@
-Hell o' World
-<button type="button" {{did-insert this.didInsert}}>
-  Did insert
-</button>
+{{yield this to="trigger"}}
 
-
-<div class="anchor" style="position: absolute; left: 10px; top: 10px;">
-  Anchor is me
-</div>
+{{#unless this.isClosed}}
+  {{#if this.inline}}
+    <Positioner::Content
+      @isHidden={{this.isHidden}}
+      @hideArrow={{@hideArrow}}
+      ...attributes
+      {{did-insert this.didRenderContent}}
+    >
+      {{yield this to="content"}}
+    </Positioner::Content>
+  {{else}}
+    {{!-- TODO: https://github.com/tildeio/events-app/issues/521
+    We can eliminate the redundant if/else construction here by using
+    the maybe-in-element addon, but it has no types yet, so it causes
+    Glint errors. --}}
+    {{#in-element this.altContainer insertBefore=null}}
+      <Positioner::Content
+        @isHidden={{this.isHidden}}
+        @hideArrow={{@hideArrow}}
+        ...attributes
+        {{did-insert this.didRenderContent}}
+      >
+        {{yield this to="content"}}
+      </Positioner::Content>
+    {{/in-element}}
+  {{/if}}
+{{/unless}}

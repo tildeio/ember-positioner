@@ -1,6 +1,8 @@
 import '@glint/environment-ember-loose/registry';
 import { TemplateFactory } from 'htmlbars-inline-precompile';
 import Helper from '@glint/environment-ember-loose/ember-component/helper';
+import 'ember-concurrency-async';
+import 'ember-concurrency-ts/async';
 
 interface PageTitleHelperSignature {
   PositionalArgs: [title: string];
