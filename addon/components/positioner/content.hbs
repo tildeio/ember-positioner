@@ -1,0 +1,14 @@
+<div
+  class="positioner {{if @isHidden "pointer-events-none"}}"
+  aria-hidden={{if @isHidden "true" "false"}}
+  ...attributes
+>
+  <div class="positioner-container">
+    {{#unless @hideArrow}}
+      <div class="popper-arrow" data-popper-arrow></div>
+    {{/unless}}
+    <div class="popper-content">
+      {{yield}}
+    </div>
+  </div>
+</div>

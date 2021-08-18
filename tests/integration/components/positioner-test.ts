@@ -190,6 +190,6 @@ module('Integration | Component | positioner', function (hooks) {
 
     await click('.trigger');
 
-    assert.dom('.ember-application > .popper').exists();
+    assert.dom('.ember-application > .positioner').exists();
   });
 });
