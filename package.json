@@ -29,7 +29,10 @@
     "postpack": "ember ts:clean"
   },
   "dependencies": {
+    "@ember/render-modifiers": "^1.0.2",
     "@gavant/glint-template-types": "^0.0.19",
+    "@glimmer/component": "^1.0.4",
+    "@glimmer/tracking": "^1.0.4",
     "@glint/core": "^0.6.1",
     "@glint/environment-ember-loose": "^0.6.1",
     "@popperjs/core": "^2.9.2",
@@ -44,11 +47,8 @@
   },
   "devDependencies": {
     "@ember/optional-features": "^2.0.0",
-    "@ember/render-modifiers": "^1.0.2",
     "@ember/test-helpers": "^2.2.5",
     "@embroider/test-setup": "^0.41.0",
-    "@glimmer/component": "^1.0.4",
-    "@glimmer/tracking": "^1.0.4",
     "@types/ember-qunit": "^3.4.14",
     "@types/ember-resolver": "^5.0.10",
     "@types/ember__application": "^3.16.3",
