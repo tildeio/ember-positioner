@@ -1,6 +1,6 @@
 {
   "name": "ember-positioner",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "A content-positioning component based on Popper.js",
   "keywords": [
     "ember-addon"
