@@ -1,5 +1,12 @@
 {{page-title "Dummy"}}
 
 <h2 id="title">Welcome to Ember</h2>
-<Positioner/>
+<Positioner class="light">
+  <:trigger as |positioner|>
+  <button  type="button" {{did-insert positioner.registerAnchor}} {{on "click" positioner.toggle}}>
+  Click me
+  </button>
+  </:trigger>
+  <:content>See me</:content>
+</Positioner>
 {{outlet}}
