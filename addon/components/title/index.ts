@@ -3,6 +3,7 @@ import { guidFor } from '@ember/object/internals';
 import { tracked } from '@glimmer/tracking';
 import Component from '@glint/environment-ember-loose/glimmer-component';
 import Ember from 'ember';
+import { assert } from '@ember/debug';
 
 import { task, timeout } from 'ember-concurrency';
 import { taskFor } from 'ember-concurrency-ts';
@@ -96,6 +97,14 @@ export default class Title extends Component<TitleSignature> {
 
   @action protected onKeydown(p: PositionerAPI, e: KeyboardEvent): void {
     if (e.key === 'Escape') {
+      p.close();
+    }
+  }
+
+  @action onFocusin(p: PositionerAPI, e: FocusEvent): void {
+    assert('target is an Element', e.target instanceof Element);
+    assert('anchor exists', this.anchor);
+    if (!this.anchor.contains(e.target)) {
       p.close();
     }
   }

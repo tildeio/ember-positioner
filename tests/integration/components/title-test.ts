@@ -1,6 +1,6 @@
 import { module, test } from 'qunit';
 import { setupRenderingTest } from 'ember-qunit';
-import { triggerEvent, render, focus } from '@ember/test-helpers';
+import { triggerEvent, render } from '@ember/test-helpers';
 import hbs from 'htmlbars-inline-precompile';
 import { find } from '@ember/test-helpers';
 import triggerKeyEvent from '@ember/test-helpers/dom/trigger-key-event';
@@ -62,7 +62,7 @@ module('Integration | Component | title', function (hooks) {
     assert.dom(titleId).hasText('Hello', 'Title is now visible');
     assert.dom(titleId).hasAria('hidden', 'false');
 
-    await focus('#something-else', 'focusin');
+    await triggerEvent('#something-else', 'focusin');
 
     assert.dom(titleId).doesNotExist('Title is not visible');
   });
