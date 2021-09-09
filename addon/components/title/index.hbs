@@ -19,7 +19,7 @@
           {{did-insert (fn this.registerAnchor p)}}
           {{on "focusin" p.open}}
           {{on "mouseenter" (perform this.didMouseenterTrigger p)}}
-          {{on "mouseleave" (perform this.closeTitle p)}}
+          {{on "mouseleave" (fn this.closeTitle p)}}
           {{did-update p.update @text}}
         >
           {{yield}}

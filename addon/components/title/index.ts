@@ -68,7 +68,7 @@ interface TitleSignature {
  * the tooltip interactivity will be disabled.
  */
 export default class Title extends Component<TitleSignature> {
-  private guid = guidFor(this);
+  private readonly guid = guidFor(this);
   @tracked private anchor?: HTMLElement;
 
   protected get titleId(): string {
@@ -101,7 +101,7 @@ export default class Title extends Component<TitleSignature> {
     }
   }
 
-  @action onFocusin(p: PositionerAPI, e: FocusEvent): void {
+  @action protected onFocusin(p: PositionerAPI, e: FocusEvent): void {
     assert('target is an Element', e.target instanceof Element);
     assert('anchor exists', this.anchor);
     if (!this.anchor.contains(e.target)) {
@@ -116,12 +116,10 @@ export default class Title extends Component<TitleSignature> {
     }
   );
 
-  @task({ drop: true }) protected closeTitle = taskFor(
-    async (p: PositionerAPI): Promise<void> => {
-      await this.didMouseenterTrigger.cancelAll();
-      p.close();
-    }
-  );
+  @action protected closeTitle(p: PositionerAPI): void {
+    void this.didMouseenterTrigger.cancelAll();
+    p.close();
+  }
 }
 
 declare module '@glint/environment-ember-loose/registry' {
