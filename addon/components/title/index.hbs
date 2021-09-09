@@ -1,0 +1,38 @@
+<div class="title-component" ...attributes>
+  {{#if this.enabled}}
+    <Positioner
+      @placement={{@placement}}
+      @overflowBoundary={{@overflowBoundary}}
+      @openDuration={{300}}
+      @closeDuration={{250}}
+      class="title-popper"
+      role="tooltip"
+      id={{this.titleId}}
+    >
+      <:trigger as |p|>
+        {{! template-lint-disable no-nested-interactive }}
+        <div
+          data-test-title-trigger
+          class="title-anchor"
+          aria-labelledby={{this.titleId}}
+          tabindex={{unless this.anchorIsFocusable 0}}
+          {{did-insert (fn this.registerAnchor p)}}
+          {{on "focusin" p.open}}
+          {{on "mouseenter" (perform this.didMouseenterTrigger p)}}
+          {{on "mouseleave" (fn this.closeTitle p)}}
+          {{did-update p.update @text}}
+        >
+          {{yield}}
+        </div>
+      </:trigger>
+      <:content as |p|>
+        {{on-document "focusin" (fn this.onFocusin p)}}
+        {{on-document "keydown" (fn this.onKeydown p)}}
+        {{@text}}
+      </:content>
+    </Positioner>
+  {{else}}
+    {{! If not enabled, just show the anchor content without the tooltip functionality }}
+    {{yield}}
+  {{/if}}
+</div>

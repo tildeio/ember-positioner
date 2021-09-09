@@ -43,6 +43,7 @@
     "ember-concurrency": "^2.1.0",
     "ember-concurrency-async": "^1.0.0",
     "ember-concurrency-ts": "^0.3.1",
+    "ember-on-helper": "^0.1.0",
     "ember-modifier": "^2.1.2"
   },
   "devDependencies": {

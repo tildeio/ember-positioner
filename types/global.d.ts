@@ -25,6 +25,8 @@ declare global {
 declare module '@glint/environment-ember-loose/registry' {
   export default interface Registry {
     'page-title': typeof PageTitleHelper;
+    perform: typeof import('@gavant/glint-template-types/types/ember-concurrency/perform').default;
+    'on-document': typeof import('@gavant/glint-template-types/types/ember-on-helper/on-document').default;
     'did-insert': typeof import('@gavant/glint-template-types/types/ember-render-modifiers/did-insert').default;
     'did-update': typeof import('@gavant/glint-template-types/types/ember-render-modifiers/did-update').default;
     'will-destroy': typeof import('@gavant/glint-template-types/types/ember-render-modifiers/will-destroy').default;
