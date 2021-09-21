@@ -1,1 +1,5 @@
-export { default } from './components/positioner';
+export {
+  default,
+  PositionerAPI,
+  PositionerSignature,
+} from './components/positioner';
