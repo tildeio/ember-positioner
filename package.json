@@ -1,6 +1,6 @@
 {
   "name": "ember-positioner",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "A content-positioning component based on Popper.js",
   "keywords": [
     "ember-addon"
@@ -43,8 +43,8 @@
     "ember-concurrency": "^2.1.0",
     "ember-concurrency-async": "^1.0.0",
     "ember-concurrency-ts": "^0.3.1",
-    "ember-on-helper": "^0.1.0",
-    "ember-modifier": "^2.1.2"
+    "ember-modifier": "^2.1.2",
+    "ember-on-helper": "^0.1.0"
   },
   "devDependencies": {
     "@ember/optional-features": "^2.0.0",
