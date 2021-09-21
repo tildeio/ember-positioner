@@ -38,9 +38,15 @@ export interface PositionerSignature {
      */
     placement?: Placement;
     /**
-     * How far away from the `anchor` element to position the positioner.
-     * Defaults to "7" to position the positioner 7px away from the `anchor`.
-     * https://popper.js.org/docs/v2/modifiers/offset/
+     * How far along the `anchor` element to offset the positioner.
+     * Defaults to 0 to offset the positioner 0px along the `anchor`.
+     * https://popper.js.org/docs/v2/modifiers/offset/#skidding
+     */
+    offsetSkidding?: number;
+    /**
+     * How far away from the `anchor` element to offset the positioner.
+     * Defaults to 7 to offset the positioner 7px away from the `anchor`.
+     * https://popper.js.org/docs/v2/modifiers/offset/#distance
      */
     offsetDistance?: number;
     /**
@@ -331,6 +337,7 @@ export default class Positioner
     let modifiers: Array<Partial<Modifier<unknown, unknown>>> = [];
     let placement = this.args.placement ?? 'top';
     let offsetDistance = this.args.offsetDistance ?? 7;
+    let offsetSkidding = this.args.offsetSkidding ?? 0;
 
     /**
      * Ensures correct animation properties when `placement` changes after render.
@@ -366,7 +373,7 @@ export default class Positioner
         {
           name: 'offset',
           options: {
-            offset: [0, offsetDistance],
+            offset: [offsetSkidding, offsetDistance],
           },
         },
       ];
