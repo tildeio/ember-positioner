@@ -21,7 +21,7 @@ function containsFocusableElements(element: Element): boolean {
   ].some((el) => !el.hasAttribute('disabled'));
 }
 
-interface TitleSignature {
+export interface TitleSignature {
   Element: HTMLDivElement;
   Args: {
     /** The text content for the title tooltip. */
