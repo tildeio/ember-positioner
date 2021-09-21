@@ -1,5 +1,4 @@
 import Component from '@glint/environment-ember-loose/glimmer-component';
-import { action } from '@ember/object';
 
 export interface PositionerContentSignature {
   Element: HTMLDivElement;
