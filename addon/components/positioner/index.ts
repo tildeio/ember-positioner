@@ -334,10 +334,17 @@ export default class Positioner
     assert('Missing content', this.content);
     assert('Missing anchor. Did you forget {{p.registerAnchor}}?', this.anchor);
 
-    let modifiers: Array<Partial<Modifier<unknown, unknown>>> = [];
     let placement = this.args.placement ?? 'top';
     let offsetDistance = this.args.offsetDistance ?? 7;
     let offsetSkidding = this.args.offsetSkidding ?? 0;
+    let modifiers: Array<Partial<Modifier<unknown, unknown>>> = [
+      {
+        name: 'offset',
+        options: {
+          offset: [offsetSkidding, offsetDistance],
+        },
+      },
+    ];
 
     /**
      * Ensures correct animation properties when `placement` changes after render.
@@ -368,12 +375,6 @@ export default class Positioner
           name: 'arrow',
           options: {
             padding: 10,
-          },
-        },
-        {
-          name: 'offset',
-          options: {
-            offset: [offsetSkidding, offsetDistance],
           },
         },
       ];
