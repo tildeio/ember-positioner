@@ -3,8 +3,8 @@
     <Positioner
       @placement={{@placement}}
       @overflowBoundary={{@overflowBoundary}}
-      @openDuration={{300}}
-      @closeDuration={{250}}
+      @openDuration={{if @openDuration @openDuration 300}}
+      @closeDuration={{if @closeDuration @closeDuration 250}}
       class="title-positioner"
       role="tooltip"
       id={{this.titleId}}

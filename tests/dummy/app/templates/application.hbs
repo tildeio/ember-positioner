@@ -11,8 +11,13 @@
 </Positioner>
 
 
-<Title @text="More info">
-  Hover me
+<Title @text="More info" @openDelay={{0}} @openDuration={{2000}} @closeDuration={{2000}}>
+  Title with custom delay and durations
+</Title>
+
+
+<Title @text="More info" >
+  Title with default delay and durations
 </Title>
 
 {{outlet}}

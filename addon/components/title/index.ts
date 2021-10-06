@@ -36,6 +36,9 @@ export interface TitleSignature {
 
     placement?: PositionerSignature['Args']['placement'];
     overflowBoundary?: PositionerSignature['Args']['overflowBoundary'];
+    openDuration?: number;
+    closeDuration?: number;
+    openDelay?: number;
   };
   Yields: {
     default: [];
@@ -111,7 +114,7 @@ export default class Title extends Component<TitleSignature> {
 
   @task({ drop: true }) protected didMouseenterTrigger = taskFor(
     async (p: PositionerAPI): Promise<void> => {
-      await timeout(Ember.testing ? 0 : 400);
+      await timeout(Ember.testing ? 0 : this.args.openDelay ?? 400);
       p.open();
     }
   );
