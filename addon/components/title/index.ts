@@ -115,8 +115,7 @@ export default class Title extends Component<TitleSignature> {
 
   @action protected onTriggerFocusin(p: PositionerAPI): void {
     if (this.focusEventIsClick) {
-      // Reset the value for next time
-      this.focusEventIsClick = false;
+      this.focusEventIsClick = false; // reset for next time
     } else {
       p.open();
     }
