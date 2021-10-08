@@ -67,6 +67,23 @@ module('Integration | Component | title', function (hooks) {
     assert.dom(titleId).doesNotExist('Title is not visible');
   });
 
+  test('it ignores clicks', async function (assert) {
+    await render(hbs`
+      <Title @text="Hello">
+        Focus me to show title!
+      </Title>
+    `);
+
+    let triggerSelector = '[data-test-title-trigger]';
+    let titleId = getTitleId(triggerSelector);
+
+    assert.dom(titleId).doesNotExist('Title is not visible');
+
+    await triggerEvent(triggerSelector, 'mousedown');
+
+    assert.dom(titleId).doesNotExist('Title is still not visible');
+  });
+
   test('it uses the bubbled focus event when the anchor block is focusable', async function (assert) {
     await render(hbs`
         <Title @text="Hello">
