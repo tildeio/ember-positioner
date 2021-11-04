@@ -84,21 +84,94 @@ export interface CloseOptions {
 }
 
 export interface PositionerAPI {
+  /**
+   * The element to which you want to anchor the positioner's `content`.
+   */
   anchor: HTMLElement | null;
+  /**
+   * Whether the positioner is in the `Opening` state.
+   */
   isOpening: boolean;
+  /**
+   * Whether the positioner is in the `Opened` state.
+   */
   isOpened: boolean;
+  /**
+   * Whether the positioner is in the `Closing` state.
+   */
   isClosing: boolean;
+  /**
+   * Whether the positioner is in the `Closed` state.
+   */
   isClosed: boolean;
+  /**
+   * Whether the positioner is in the `Opening` or `Opened` state.
+   * Used to manage state for assistive technologies that have no reason to wait
+   * for animation transitions in the UI that happen in the `Opening` state.
+   */
   isShown: boolean;
+  /**
+   * Whether the positioner is in the `Closing` or `Closed` state.
+   * Used to manage state for assistive technologies that have no reason to wait
+   * for animation transitions in the UI that happen in the `Closing` state.
+   */
   isHidden: boolean;
-  // Actions you can pass to the on modifier
+  /**
+   * Event handler that opens and closes the positioner's `content`.
+   * Can be passed to the "on" modifier directly, in which case we will recieve
+   * the `Event`.
+   *
+   * @param event The DOM event to attach this click handler to.
+   */
   toggle(event?: Event): void;
+  /**
+   * Event handler that opens the positioner's `content`.
+   * Can be passed to the "on" modifier directly, in which case we will recieve
+   * the `Event`.
+   *
+   * @param event The DOM event to attach this click handler to.
+   */
   open(event?: Event): void;
+  /**
+   * Event handler that opens the positioner's `content`.
+   * Can be called with an options object using the `(fn)` helper in a template,
+   * or from JS code.
+   *
+   * Executes the optional `didRender` callback specified in the `options` POJO
+   * during the `Opening` animation state.
+   * Executes the optional `didOpen` callback specified in the `options` POJO
+   * after the positioner is `Opened`.
+   *
+   * @param options POJO with `didRender` and/or `didOpen` callbacks as properties.
+   */
   open(options: OpenOptions): void;
+  /**
+   * Event handler that closes the positioner's `content`.
+   * Can be passed to the "on" modifier directly, in which case we will recieve
+   * the `Event`.
+   */
   close(event?: Event): void;
+  /**
+   * Event handler that closes the positioner's `content`.
+   * Can be called with an options object using the `(fn)` helper in a template,
+   * or from JS code.
+   *
+   * Executes the optional `didClose` callback specified in the `options` POJO
+   * after the positioner is `Closed`.
+   *
+   * @param options POJO with a `didClose` callback property.
+   */
   close(options: CloseOptions): void;
+  /**
+   * Recomputes the positioner's position. This is especially useful if the
+   * content of the positioner changes after initial render.
+   */
   update(): void;
-  // Callback you can pass to the did-insert modifier
+
+  /**
+   * Registers the positioner's `anchor`.
+   * Use with the `did-insert` modifier.
+   */
   registerAnchor: (target: HTMLElement) => void;
 }
 
