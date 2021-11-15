@@ -39,6 +39,7 @@ export interface TitleSignature {
     openDuration?: number;
     closeDuration?: number;
     openDelay?: number;
+    inline?: boolean;
   };
   Yields: {
     default: [];
