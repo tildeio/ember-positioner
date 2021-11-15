@@ -17,7 +17,8 @@
           aria-labelledby={{this.titleId}}
           tabindex={{unless this.anchorIsFocusable 0}}
           {{did-insert (fn this.registerAnchor p)}}
-          {{on "focusin" p.open}}
+          {{on "focusin" (fn this.onTriggerFocusin p)}}
+          {{on "mousedown" this.handleMousedown}}
           {{on "mouseenter" (perform this.didMouseenterTrigger p)}}
           {{on "mouseleave" (fn this.closeTitle p)}}
           {{did-update p.update @text}}

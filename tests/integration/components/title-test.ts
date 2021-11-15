@@ -2,7 +2,7 @@ import { module, test } from 'qunit';
 import { setupRenderingTest } from 'ember-qunit';
 import { triggerEvent, render } from '@ember/test-helpers';
 import hbs from 'htmlbars-inline-precompile';
-import { find } from '@ember/test-helpers';
+import { find, click } from '@ember/test-helpers';
 import triggerKeyEvent from '@ember/test-helpers/dom/trigger-key-event';
 
 function getTitleId(triggerSelector = '[data-test-title-trigger]'): string {
@@ -65,6 +65,29 @@ module('Integration | Component | title', function (hooks) {
     await triggerEvent('#something-else', 'focusin');
 
     assert.dom(titleId).doesNotExist('Title is not visible');
+  });
+
+  test('it ignores clicks', async function (assert) {
+    await render(hbs`
+      <Title @text="Hello">
+        Focus me to show title!
+      </Title>
+      <a href="#" id="something-else">Focus me next.</a>
+    `);
+
+    let triggerSelector = '[data-test-title-trigger]';
+    let titleId = getTitleId(triggerSelector);
+
+    assert.dom(triggerSelector).hasText('Focus me to show title!');
+    assert.dom(titleId).doesNotExist('Title is not visible');
+
+
+    await click(triggerSelector);
+    assert.dom(titleId).doesNotExist('Title is still not visible');
+
+    await click('#something-else');
+    await triggerEvent(triggerSelector, 'focusin');
+    assert.dom(titleId).hasText('Hello', 'Title is now visible');
   });
 
   test('it uses the bubbled focus event when the anchor block is focusable', async function (assert) {

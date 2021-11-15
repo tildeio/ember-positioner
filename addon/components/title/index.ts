@@ -73,6 +73,7 @@ export interface TitleSignature {
 export default class Title extends Component<TitleSignature> {
   private readonly guid = guidFor(this);
   @tracked private anchor?: HTMLElement;
+  @tracked private focusEventIsClick = false;
 
   protected get titleId(): string {
     return `${this.guid}-title`;
@@ -101,6 +102,22 @@ export default class Title extends Component<TitleSignature> {
   @action protected onKeydown(p: PositionerAPI, e: KeyboardEvent): void {
     if (e.key === 'Escape') {
       p.close();
+    }
+  }
+
+  /**
+   * Mousedown handler for the title anchor.
+   * Tells `onTriggerFocusin` to ignore clicks.
+   */
+  @action handleMousedown(): void {
+    this.focusEventIsClick = true;
+  }
+
+  @action protected onTriggerFocusin(p: PositionerAPI): void {
+    if (this.focusEventIsClick) {
+      this.focusEventIsClick = false; // reset for next time
+    } else {
+      p.open();
     }
   }
 
