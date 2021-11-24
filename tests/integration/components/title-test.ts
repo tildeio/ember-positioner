@@ -81,7 +81,6 @@ module('Integration | Component | title', function (hooks) {
     assert.dom(triggerSelector).hasText('Focus me to show title!');
     assert.dom(titleId).doesNotExist('Title is not visible');
 
-
     await click(triggerSelector);
     assert.dom(titleId).doesNotExist('Title is still not visible');
 
