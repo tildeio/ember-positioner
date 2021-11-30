@@ -29,7 +29,7 @@
     "postpack": "ember ts:clean"
   },
   "dependencies": {
-    "@ember/render-modifiers": "^1.0.2",
+    "@ember/render-modifiers": "^2.0.0",
     "@gavant/glint-template-types": "^0.0.19",
     "@glimmer/component": "^1.0.4",
     "@glimmer/tracking": "^1.0.4",
