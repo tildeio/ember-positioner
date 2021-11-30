@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "@ember/render-modifiers": "^2.0.0",
-    "@gavant/glint-template-types": "^0.0.19",
+    "@gavant/glint-template-types": "^0.0.21",
     "@glimmer/component": "^1.0.4",
     "@glimmer/tracking": "^1.0.4",
     "@glint/core": "^0.6.1",
