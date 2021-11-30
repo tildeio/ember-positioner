@@ -19,7 +19,7 @@ jobs:
       # We aren't using the global node setup by this action, but it
       # adds the problem matchers for eslint, tsc, etc.
       - name: Set up Node
-        uses: actions/setup-node@v2.4.1
+        uses: actions/setup-node@v2.5.0
       # The default tsc problem matcher that came with setup-node does
       # not parse line/column numbers correctly.
       #
