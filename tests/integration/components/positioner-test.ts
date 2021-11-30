@@ -122,7 +122,11 @@ module('Integration | Component | positioner', function (hooks) {
       </Positioner>
     `);
 
-    assert.equal(didRenderCount, 0, 'it has not called the didRender callback');
+    assert.strictEqual(
+      didRenderCount,
+      0,
+      'it has not called the didRender callback'
+    );
     assert.dom('.is-opening').containsText('false');
     assert.dom('.is-opened').containsText('false');
     assert.dom('.is-closing').containsText('false');
@@ -132,7 +136,7 @@ module('Integration | Component | positioner', function (hooks) {
 
     await click('.open');
 
-    assert.equal(didRenderCount, 1, 'it called the didRender callback');
+    assert.strictEqual(didRenderCount, 1, 'it called the didRender callback');
     assert.dom('.is-opening').containsText('true');
     assert.dom('.is-opened').containsText('false');
     assert.dom('.is-closing').containsText('false');
@@ -142,7 +146,7 @@ module('Integration | Component | positioner', function (hooks) {
 
     await fullyOpened;
 
-    assert.equal(didRenderCount, 1);
+    assert.strictEqual(didRenderCount, 1);
     assert.dom('.is-opening').containsText('false');
     assert.dom('.is-opened').containsText('true');
     assert.dom('.is-closing').containsText('false');
@@ -152,7 +156,7 @@ module('Integration | Component | positioner', function (hooks) {
 
     await click('.close');
 
-    assert.equal(didRenderCount, 1);
+    assert.strictEqual(didRenderCount, 1);
     assert.dom('.is-opening').containsText('false');
     assert.dom('.is-opened').containsText('false');
     assert.dom('.is-closing').containsText('true');
@@ -162,7 +166,7 @@ module('Integration | Component | positioner', function (hooks) {
 
     await fullyClosed;
 
-    assert.equal(didRenderCount, 1);
+    assert.strictEqual(didRenderCount, 1);
     assert.dom('.is-opening').containsText('false');
     assert.dom('.is-opened').containsText('false');
     assert.dom('.is-closing').containsText('false');
