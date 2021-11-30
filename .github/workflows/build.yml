@@ -89,7 +89,7 @@ jobs:
         run: yarn test:ember
 
   ember-try:
-    timeout-minutes: 30
+    timeout-minutes: 10
     needs: tests
     runs-on: ubuntu-latest
     strategy:
