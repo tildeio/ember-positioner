@@ -1382,10 +1382,10 @@
     "@glimmer/interfaces" "^0.42.2"
     "@glimmer/util" "^0.42.2"
 
-"@glint/config@^0.6.1":
-  version "0.6.1"
-  resolved "https://registry.yarnpkg.com/@glint/config/-/config-0.6.1.tgz#becead8c60893ff6e80bda82d242a89517cfc40d"
-  integrity sha512-KuJ4BsZ+rT2nVvqsORs1QbN5WU34rYYazVUOVPX2JyX6zXW1Yw6AFehVfAQ/DkOCrVhnSfDK50/uLqsgoYCXrQ==
+"@glint/config@^0.6.1", "@glint/config@^0.6.3":
+  version "0.6.3"
+  resolved "https://registry.yarnpkg.com/@glint/config/-/config-0.6.3.tgz#4bb0f262ba9d98ab57fa7b120a868cdf2a5dc57d"
+  integrity sha512-RVSkDQ5ROpn8hSwSOqrFX19LblR+BSwTD+gOXXK1QOlOwhCNTNKx6Eh7ZYiIBj2n3WF/Yp59TaHKyQFXO/SBYA==
   dependencies:
     cosmiconfig "^6.0.0"
     escape-string-regexp "^4.0.0"
@@ -1393,12 +1393,12 @@
     resolve "^1.17.0"
 
 "@glint/core@^0.6.1":
-  version "0.6.1"
-  resolved "https://registry.yarnpkg.com/@glint/core/-/core-0.6.1.tgz#2112dd92bd12dd88e4c337d67387830e0823ffc0"
-  integrity sha512-DI2/lEZvA3OcW+52AYyGAmguWN3aCo1kDaO1lj47Xyk2JsTVheR1C2NlJyxX0mp0DxyluA6ozFVuJYu1+8X8Lg==
+  version "0.6.3"
+  resolved "https://registry.yarnpkg.com/@glint/core/-/core-0.6.3.tgz#86182f03d69387eb302b50199be7b55fd4f80b57"
+  integrity sha512-v61RzuMWqhWh4ujJktgku+T68KcEWB3O1noInP19n3Ns/0s0vd1d9T7jFa1msBEw3DNMrq23nbvGlwaHSjcvbQ==
   dependencies:
-    "@glint/config" "^0.6.1"
-    "@glint/transform" "^0.6.1"
+    "@glint/config" "^0.6.3"
+    "@glint/transform" "^0.6.3"
     resolve "^1.17.0"
     vscode-languageserver "^7.0.0"
     vscode-languageserver-textdocument "^1.0.1"
@@ -1418,16 +1418,16 @@
   resolved "https://registry.yarnpkg.com/@glint/template/-/template-0.6.1.tgz#29d82a71ffc3a634217b965e67f951859ec6dbc2"
   integrity sha512-YoFMR1J1utbi6EgW4WSMoXAJRQ3QG3aDeO+qbvRWMoEol0aXjvV9bjHrFVtXZzwRmP1qERTqxmgamtsgNQFOgQ==
 
-"@glint/transform@^0.6.1":
-  version "0.6.1"
-  resolved "https://registry.yarnpkg.com/@glint/transform/-/transform-0.6.1.tgz#83b8b34d7785c71388fb381a9c52253e1210edfc"
-  integrity sha512-qtRNgNCa9AABW1Plh9t7CSbScS/l2AhWNicB9y0xs/VYbCzJy1RlZi0AWVrEhRYtaluEmDgP4TTPfKsyX6sH/w==
+"@glint/transform@^0.6.3":
+  version "0.6.3"
+  resolved "https://registry.yarnpkg.com/@glint/transform/-/transform-0.6.3.tgz#981140144f0d2296c3ed6d8e48560adf1fb21760"
+  integrity sha512-owAnLZY3EmTVYYFV7bYoYD5EQKSRaB8v7H641gQjRxqOqxBJAoCSq2sz3XRxf2YGNHS8bhc+/zq8EtyXDUOyVw==
   dependencies:
     "@babel/core" "^7.11.6"
     "@babel/plugin-proposal-decorators" "7.10.5"
     "@babel/preset-typescript" "^7.10.4"
     "@glimmer/syntax" "^0.68.1"
-    "@glint/config" "^0.6.1"
+    "@glint/config" "^0.6.3"
 
 "@handlebars/parser@^1.1.0":
   version "1.1.0"
