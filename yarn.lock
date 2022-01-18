@@ -1406,17 +1406,17 @@
     yargs "^15.3.1"
 
 "@glint/environment-ember-loose@^0.6.1":
-  version "0.6.1"
-  resolved "https://registry.yarnpkg.com/@glint/environment-ember-loose/-/environment-ember-loose-0.6.1.tgz#4b2d7c086c00d862ee708870aec9279b4e0ae066"
-  integrity sha512-OTthTkqKqOg/RH8mNruL8bi8IWSxtMB9/skRC8DlYrP6W0c4CDwO0pYY6SWCdF3OwAOAh36BsAd37DNUNIv1NA==
+  version "0.6.3"
+  resolved "https://registry.yarnpkg.com/@glint/environment-ember-loose/-/environment-ember-loose-0.6.3.tgz#96851fdc30036676b8ba28257a3e74d6ef9245a3"
+  integrity sha512-9PjB2puQ4RV65MwiamyQUFuEC58ldmOgt5oLqJROszKjuCXFr4Ov03zNiLHybiiMa6R7UuSUAdMBekLOr3g/wA==
   dependencies:
-    "@glint/config" "^0.6.1"
-    "@glint/template" "^0.6.1"
+    "@glint/config" "^0.6.3"
+    "@glint/template" "^0.6.3"
 
-"@glint/template@^0.6.1":
-  version "0.6.1"
-  resolved "https://registry.yarnpkg.com/@glint/template/-/template-0.6.1.tgz#29d82a71ffc3a634217b965e67f951859ec6dbc2"
-  integrity sha512-YoFMR1J1utbi6EgW4WSMoXAJRQ3QG3aDeO+qbvRWMoEol0aXjvV9bjHrFVtXZzwRmP1qERTqxmgamtsgNQFOgQ==
+"@glint/template@^0.6.3":
+  version "0.6.3"
+  resolved "https://registry.yarnpkg.com/@glint/template/-/template-0.6.3.tgz#fa5fc343901b96cb377406be2b8c6a5089c165f1"
+  integrity sha512-tD91I48ZT8V4Rur6aNBbeYHFeIxgyZ1WRrgu+uxgOhU7zLYcLpvTiuZyoQCC3oky6k34/ln9Dnea9N7BxMg9tg==
 
 "@glint/transform@^0.6.3":
   version "0.6.3"
