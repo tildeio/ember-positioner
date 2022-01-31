@@ -21,7 +21,7 @@
   resolved "https://registry.npmjs.org/@babel/compat-data/-/compat-data-7.16.8.tgz"
   integrity sha512-m7OkX0IdKLKPpBlJtF561YJal5y/jyI5fNfWbPxh2D/nbzzGI4qRyrD8xO2jB24u7l+5I2a43scCG2IrfjC50Q==
 
-"@babel/core@^7.1.6", "@babel/core@^7.11.6", "@babel/core@^7.12.0", "@babel/core@^7.16.0", "@babel/core@^7.16.7", "@babel/core@^7.3.4":
+"@babel/core@^7.1.6", "@babel/core@^7.12.0", "@babel/core@^7.16.0", "@babel/core@^7.16.7", "@babel/core@^7.3.4":
   version "7.16.12"
   resolved "https://registry.npmjs.org/@babel/core/-/core-7.16.12.tgz"
   integrity sha512-dK5PtG1uiN2ikk++5OzSYsitZKny4wOCD0nrO4TqnW4BVBTQ2NGS3NgilvT/TEyxTST7LNyWV/T4tXDoD3fOgg==
@@ -76,7 +76,7 @@
     browserslist "^4.17.5"
     semver "^6.3.0"
 
-"@babel/helper-create-class-features-plugin@^7.10.5", "@babel/helper-create-class-features-plugin@^7.16.10", "@babel/helper-create-class-features-plugin@^7.16.7", "@babel/helper-create-class-features-plugin@^7.5.5":
+"@babel/helper-create-class-features-plugin@^7.16.10", "@babel/helper-create-class-features-plugin@^7.16.7", "@babel/helper-create-class-features-plugin@^7.5.5":
   version "7.16.10"
   resolved "https://registry.npmjs.org/@babel/helper-create-class-features-plugin/-/helper-create-class-features-plugin-7.16.10.tgz"
   integrity sha512-wDeej0pu3WN/ffTxMNCPW5UCiOav8IcLRxSIyp/9+IF2xJUM9h/OYjg0IJLHaL6F8oU8kqMz9nc1vryXhMsgXg==
@@ -314,15 +314,6 @@
     "@babel/helper-plugin-utils" "^7.16.7"
     "@babel/plugin-syntax-class-static-block" "^7.14.5"
 
-"@babel/plugin-proposal-decorators@7.10.5":
-  version "7.10.5"
-  resolved "https://registry.npmjs.org/@babel/plugin-proposal-decorators/-/plugin-proposal-decorators-7.10.5.tgz"
-  integrity sha512-Sc5TAQSZuLzgY0664mMDn24Vw2P8g/VhyLyGPaWiHahhgLqeZvcGeyBZOrJW0oSKIK2mvQ22a1ENXBIQLhrEiQ==
-  dependencies:
-    "@babel/helper-create-class-features-plugin" "^7.10.5"
-    "@babel/helper-plugin-utils" "^7.10.4"
-    "@babel/plugin-syntax-decorators" "^7.10.4"
-
 "@babel/plugin-proposal-decorators@^7.13.5", "@babel/plugin-proposal-decorators@^7.16.7":
   version "7.16.7"
   resolved "https://registry.npmjs.org/@babel/plugin-proposal-decorators/-/plugin-proposal-decorators-7.16.7.tgz"
@@ -455,7 +446,7 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.14.5"
 
-"@babel/plugin-syntax-decorators@^7.10.4", "@babel/plugin-syntax-decorators@^7.16.7":
+"@babel/plugin-syntax-decorators@^7.16.7":
   version "7.16.7"
   resolved "https://registry.npmjs.org/@babel/plugin-syntax-decorators/-/plugin-syntax-decorators-7.16.7.tgz"
   integrity sha512-vQ+PxL+srA7g6Rx6I1e15m55gftknl2X8GCUW1JTlkTaXZLJOS0UcaY0eK9jYT7IYf4awn6qwyghVHLDz1WyMw==
@@ -793,7 +784,7 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.16.7"
 
-"@babel/plugin-transform-typescript@^7.13.0", "@babel/plugin-transform-typescript@^7.16.7":
+"@babel/plugin-transform-typescript@^7.13.0":
   version "7.16.8"
   resolved "https://registry.npmjs.org/@babel/plugin-transform-typescript/-/plugin-transform-typescript-7.16.8.tgz"
   integrity sha512-bHdQ9k7YpBDO2d0NVfkj51DpQcvwIzIusJ7mEUaMlbZq3Kt/U47j24inXZHQ5MDiYpCs+oZiwnXyKedE8+q7AQ==
@@ -932,15 +923,6 @@
     "@babel/plugin-transform-dotall-regex" "^7.4.4"
     "@babel/types" "^7.4.4"
     esutils "^2.0.2"
-
-"@babel/preset-typescript@^7.10.4":
-  version "7.16.7"
-  resolved "https://registry.npmjs.org/@babel/preset-typescript/-/preset-typescript-7.16.7.tgz"
-  integrity sha512-WbVEmgXdIyvzB77AQjGBEyYPZx+8tTsO50XtfozQrkW8QB2rLJpH2lgx0TRw5EJrBxOZQ+wCcyPVQvS8tjEHpQ==
-  dependencies:
-    "@babel/helper-plugin-utils" "^7.16.7"
-    "@babel/helper-validator-option" "^7.16.7"
-    "@babel/plugin-transform-typescript" "^7.16.7"
 
 "@babel/runtime@7.12.18":
   version "7.12.18"
@@ -1238,16 +1220,6 @@
   dependencies:
     babel-plugin-debug-macros "^0.3.4"
 
-"@glint/config@^0.6.3":
-  version "0.6.3"
-  resolved "https://registry.npmjs.org/@glint/config/-/config-0.6.3.tgz"
-  integrity sha512-RVSkDQ5ROpn8hSwSOqrFX19LblR+BSwTD+gOXXK1QOlOwhCNTNKx6Eh7ZYiIBj2n3WF/Yp59TaHKyQFXO/SBYA==
-  dependencies:
-    cosmiconfig "^6.0.0"
-    escape-string-regexp "^4.0.0"
-    minimatch "^3.0.4"
-    resolve "^1.17.0"
-
 "@glint/config@^0.7.0":
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/@glint/config/-/config-0.7.0.tgz#40475f9d29e5e5eff29bc64c27ddd72ce4c0cc5e"
@@ -1258,14 +1230,15 @@
     minimatch "^3.0.4"
     resolve "^1.17.0"
 
-"@glint/core@^0.6.1":
-  version "0.6.3"
-  resolved "https://registry.npmjs.org/@glint/core/-/core-0.6.3.tgz"
-  integrity sha512-v61RzuMWqhWh4ujJktgku+T68KcEWB3O1noInP19n3Ns/0s0vd1d9T7jFa1msBEw3DNMrq23nbvGlwaHSjcvbQ==
+"@glint/core@^0.7.0":
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/@glint/core/-/core-0.7.0.tgz#de3ccef9b1a5151a43bb8f6089b9ed422121e1bb"
+  integrity sha512-Q1JSYqF27TvuRyPOL7Q+Ks9YovzsvWsw2UEOSpH1j5SwoqwxUVZOXINkqJn6ydozZpkFdfhwUh0oQBLAhHWA5A==
   dependencies:
-    "@glint/config" "^0.6.3"
-    "@glint/transform" "^0.6.3"
+    "@glint/config" "^0.7.0"
+    "@glint/transform" "^0.7.0"
     resolve "^1.17.0"
+    uuid "^8.3.2"
     vscode-languageserver "^7.0.0"
     vscode-languageserver-textdocument "^1.0.1"
     vscode-uri "^3.0.2"
@@ -1284,16 +1257,13 @@
   resolved "https://registry.yarnpkg.com/@glint/template/-/template-0.7.0.tgz#e3d29dce639c69b30272dda57b1a5048f6a13d7e"
   integrity sha512-H9GeXWYnetFU4/1Y83ixA7tjmjiSEOHtbGmsXGsslQHStvFOBJOXmf9eBhj/sg0ThBzNw7DH+58d972mWp+dVg==
 
-"@glint/transform@^0.6.3":
-  version "0.6.3"
-  resolved "https://registry.npmjs.org/@glint/transform/-/transform-0.6.3.tgz"
-  integrity sha512-owAnLZY3EmTVYYFV7bYoYD5EQKSRaB8v7H641gQjRxqOqxBJAoCSq2sz3XRxf2YGNHS8bhc+/zq8EtyXDUOyVw==
+"@glint/transform@^0.7.0":
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/@glint/transform/-/transform-0.7.0.tgz#e5fb041c97421269facd04d0a735755a7eb4c4d2"
+  integrity sha512-IpSOSVeu3QaARMm032FICpJtkABU6Q/Dw6Iji8JvaEoikhN7as/vMMGZoasMk3npPNYKepZmcyqvQpdbV5kEuA==
   dependencies:
-    "@babel/core" "^7.11.6"
-    "@babel/plugin-proposal-decorators" "7.10.5"
-    "@babel/preset-typescript" "^7.10.4"
     "@glimmer/syntax" "^0.68.1"
-    "@glint/config" "^0.6.3"
+    "@glint/config" "^0.7.0"
 
 "@handlebars/parser@^1.1.0":
   version "1.1.0"
