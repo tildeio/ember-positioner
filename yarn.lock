@@ -1248,6 +1248,16 @@
     minimatch "^3.0.4"
     resolve "^1.17.0"
 
+"@glint/config@^0.7.0":
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/@glint/config/-/config-0.7.0.tgz#40475f9d29e5e5eff29bc64c27ddd72ce4c0cc5e"
+  integrity sha512-SN60WDrOsV35IPfqC2+XA3gPgZMVFJ+CGxFiIFPTzV+cFc8FNTm3xGAkkqiEy93MiBOnALmzyZu1ITMBlTAThQ==
+  dependencies:
+    cosmiconfig "^6.0.0"
+    escape-string-regexp "^4.0.0"
+    minimatch "^3.0.4"
+    resolve "^1.17.0"
+
 "@glint/core@^0.6.1":
   version "0.6.3"
   resolved "https://registry.npmjs.org/@glint/core/-/core-0.6.3.tgz"
@@ -1261,18 +1271,18 @@
     vscode-uri "^3.0.2"
     yargs "^15.3.1"
 
-"@glint/environment-ember-loose@^0.6.1":
-  version "0.6.3"
-  resolved "https://registry.npmjs.org/@glint/environment-ember-loose/-/environment-ember-loose-0.6.3.tgz"
-  integrity sha512-9PjB2puQ4RV65MwiamyQUFuEC58ldmOgt5oLqJROszKjuCXFr4Ov03zNiLHybiiMa6R7UuSUAdMBekLOr3g/wA==
+"@glint/environment-ember-loose@^0.7.0":
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/@glint/environment-ember-loose/-/environment-ember-loose-0.7.0.tgz#ccf8f1ca4113b9a8c45fe59e7e922714a469c027"
+  integrity sha512-GThXtFEvmSYSpO/trWPfA7TDQBvswQiOfup0znMrSy97WxmsXovhB8Q5bhXVeCaQ/ogGsd7FVL2nNhnc0x+BKQ==
   dependencies:
-    "@glint/config" "^0.6.3"
-    "@glint/template" "^0.6.3"
+    "@glint/config" "^0.7.0"
+    "@glint/template" "^0.7.0"
 
-"@glint/template@^0.6.3":
-  version "0.6.3"
-  resolved "https://registry.npmjs.org/@glint/template/-/template-0.6.3.tgz"
-  integrity sha512-tD91I48ZT8V4Rur6aNBbeYHFeIxgyZ1WRrgu+uxgOhU7zLYcLpvTiuZyoQCC3oky6k34/ln9Dnea9N7BxMg9tg==
+"@glint/template@^0.7.0":
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/@glint/template/-/template-0.7.0.tgz#e3d29dce639c69b30272dda57b1a5048f6a13d7e"
+  integrity sha512-H9GeXWYnetFU4/1Y83ixA7tjmjiSEOHtbGmsXGsslQHStvFOBJOXmf9eBhj/sg0ThBzNw7DH+58d972mWp+dVg==
 
 "@glint/transform@^0.6.3":
   version "0.6.3"
