@@ -33,7 +33,7 @@
     "@gavant/glint-template-types": "^0.0.21",
     "@glimmer/component": "^1.0.4",
     "@glimmer/tracking": "^1.0.4",
-    "@glint/core": "^0.6.1",
+    "@glint/core": "^0.7.0",
     "@glint/environment-ember-loose": "^0.7.0",
     "@popperjs/core": "^2.9.2",
     "ember-auto-import": "^2.2.4",
