@@ -1465,9 +1465,9 @@
     "@types/ember__routing" "*"
 
 "@types/ember__array@*", "@types/ember__array@^4.0.0":
-  version "4.0.0"
-  resolved "https://registry.npmjs.org/@types/ember__array/-/ember__array-4.0.0.tgz"
-  integrity sha512-C3kFMgUI/rTEIemVWc5oanjek7oLLWCQscBtkEcC7dQVr3GstXxBYHYjmAscI2vqLgjGmdibk7SYbfrde5qHjg==
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/@types/ember__array/-/ember__array-4.0.1.tgz#b62126ed080b29351a5633bd28e595a5cfee27ce"
+  integrity sha512-fwrYcYmFbsEnu77Xn9z3WSAp6tqpwn8Wksx8RzGg5pib6VmFD/dkT5jefwoKtlcImsxUNEoP1VgWKrdrpGaQcg==
   dependencies:
     "@types/ember" "*"
     "@types/ember__array" "*"
