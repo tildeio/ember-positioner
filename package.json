@@ -1,6 +1,6 @@
 {
   "name": "ember-positioner",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A content-positioning component based on Popper.js",
   "keywords": [
     "ember-addon"
@@ -30,11 +30,8 @@
   },
   "dependencies": {
     "@ember/render-modifiers": "^2.0.0",
-    "@gavant/glint-template-types": "^0.0.21",
     "@glimmer/component": "^1.0.4",
     "@glimmer/tracking": "^1.0.4",
-    "@glint/core": "^0.7.0",
-    "@glint/environment-ember-loose": "^0.7.0",
     "@popperjs/core": "^2.9.2",
     "ember-auto-import": "^2.2.4",
     "ember-cli-babel": "^7.26.11",
@@ -50,6 +47,9 @@
     "@ember/optional-features": "^2.0.0",
     "@ember/test-helpers": "^2.6.0",
     "@embroider/test-setup": "^1.0.0",
+    "@gavant/glint-template-types": "^0.0.21",
+    "@glint/core": "^0.7.0",
+    "@glint/environment-ember-loose": "^0.7.0",
     "@types/ember-qunit": "^5.0.0",
     "@types/ember-resolver": "^5.0.10",
     "@types/ember__application": "^4.0.0",
@@ -104,6 +104,11 @@
     "qunit-dom": "^2.0.0",
     "typescript": "^4.3.5",
     "webpack": "^5.65.0"
+  },
+  "peerDependencies": {
+    "@gavant/glint-template-types": "^0.0.21",
+    "@glint/core": "^0.7.0",
+    "@glint/environment-ember-loose": "^0.7.0"
   },
   "engines": {
     "node": "12.* || 14.* || >= 16"
