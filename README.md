@@ -1,3 +1,14 @@
+> :warning: This package is the result of extracting/experimenting with code
+> we had integrating [Popper](https://popper.js.org) with Ember. At the moment
+> it is not very polished, and probably need to go through a few more round of
+> somewhat significant refactor/API changes. You may want to consider those
+> factors before relying on this package at this time.
+> 
+> That being said, we think it is valuable to have the code out in the open at
+> this stage as it provides a good example/starting point for discussions. If
+> you find this package useful/interesting, and would like to help shape and
+> polish it up, open an issue!
+
 ember-positioner
 ==============================================================================
 
