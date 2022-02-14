@@ -1454,14 +1454,13 @@
     "@types/ember__object" "*"
 
 "@types/ember__component@*", "@types/ember__component@^4.0.0":
-  version "4.0.3"
-  resolved "https://registry.yarnpkg.com/@types/ember__component/-/ember__component-4.0.3.tgz#49daf938cdd20e7d3feefd0de8f55146ee537760"
-  integrity sha512-WcCqvkz+zZDTgcETMuam3X4GVd7V8ys8jnCFRNHDYD7q09uRf3QwjHH3ioQzWaf/aOsCorQZIHRbXy2cRKag3g==
+  version "4.0.4"
+  resolved "https://registry.yarnpkg.com/@types/ember__component/-/ember__component-4.0.4.tgz#c6728536c71a082a32720ac2d0d8eed021dbf76f"
+  integrity sha512-Vj3LtBz2l7OVynGUlnRkDyEJhMVjD+xkdO2V2Dqy006Rfb7gkLtvQ8SEvmO4z2MlUzPv8+O19rVqRs4qLLbYOw==
   dependencies:
     "@types/ember" "*"
     "@types/ember__component" "*"
     "@types/ember__object" "*"
-    "@types/jquery" "*"
 
 "@types/ember__controller@*", "@types/ember__controller@^4.0.0":
   version "4.0.0"
@@ -1635,13 +1634,6 @@
   resolved "https://registry.npmjs.org/@types/htmlbars-inline-precompile/-/htmlbars-inline-precompile-3.0.0.tgz"
   integrity sha512-n1YwM/Q937KmS9W4Ytran71nzhhcT2FDQI00eRGBNUyeErLZspBdDBewEe1F8tcRlUdsCVo2AZBLJsRjEceTRg==
 
-"@types/jquery@*":
-  version "3.5.13"
-  resolved "https://registry.yarnpkg.com/@types/jquery/-/jquery-3.5.13.tgz#5482d3ee325d5862f77a91c09369ae0a5b082bf3"
-  integrity sha512-ZxJrup8nz/ZxcU0vantG+TPdboMhB24jad2uSap50zE7Q9rUeYlCF25kFMSmHR33qoeOgqcdHEp3roaookC0Sg==
-  dependencies:
-    "@types/sizzle" "*"
-
 "@types/json-schema@*", "@types/json-schema@^7.0.5", "@types/json-schema@^7.0.7", "@types/json-schema@^7.0.8", "@types/json-schema@^7.0.9":
   version "7.0.9"
   resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.9.tgz#97edc9037ea0c38585320b28964dde3b39e4660d"
@@ -1702,11 +1694,6 @@
   dependencies:
     "@types/mime" "^1"
     "@types/node" "*"
-
-"@types/sizzle@*":
-  version "2.3.3"
-  resolved "https://registry.yarnpkg.com/@types/sizzle/-/sizzle-2.3.3.tgz#ff5e2f1902969d305225a047c8a0fd5c915cebef"
-  integrity sha512-JYM8x9EGF163bEyhdJBpR2QX1R5naCJHC8ucJylJ3w9/CVBaskdQ8WqBf8MmQrd1kRvp/a4TS8HJ+bxzR7ZJYQ==
 
 "@types/symlink-or-copy@^1.2.0":
   version "1.2.0"
