@@ -1220,10 +1220,10 @@
   dependencies:
     babel-plugin-debug-macros "^0.3.4"
 
-"@glint/config@^0.7.0":
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/@glint/config/-/config-0.7.0.tgz#40475f9d29e5e5eff29bc64c27ddd72ce4c0cc5e"
-  integrity sha512-SN60WDrOsV35IPfqC2+XA3gPgZMVFJ+CGxFiIFPTzV+cFc8FNTm3xGAkkqiEy93MiBOnALmzyZu1ITMBlTAThQ==
+"@glint/config@^0.7.0", "@glint/config@^0.7.2":
+  version "0.7.2"
+  resolved "https://registry.yarnpkg.com/@glint/config/-/config-0.7.2.tgz#31a1cb41f0d250c7837af783616ca2919f37b9e2"
+  integrity sha512-PRUOaoh6LbDJrkB3/jLf7OH571LxpYazKjlG+qe1f6ZXhbmdcZduFgBapaMpQXiDIiDuTmKRh5rOIqDmCHAGXw==
   dependencies:
     cosmiconfig "^6.0.0"
     escape-string-regexp "^4.0.0"
@@ -1245,17 +1245,17 @@
     yargs "^15.3.1"
 
 "@glint/environment-ember-loose@^0.7.0":
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/@glint/environment-ember-loose/-/environment-ember-loose-0.7.0.tgz#ccf8f1ca4113b9a8c45fe59e7e922714a469c027"
-  integrity sha512-GThXtFEvmSYSpO/trWPfA7TDQBvswQiOfup0znMrSy97WxmsXovhB8Q5bhXVeCaQ/ogGsd7FVL2nNhnc0x+BKQ==
+  version "0.7.2"
+  resolved "https://registry.yarnpkg.com/@glint/environment-ember-loose/-/environment-ember-loose-0.7.2.tgz#40e2aa6b6a77fe3e762c8f6e4c705f75bd89de71"
+  integrity sha512-8mJx7R9W0Xh65lyHgZpbr7Lkc2vo+PIV+1rqdkYaWR90glcH2yu5Q8me7qb+XIkgjTd8t0wT7+McHEMHWOgkMA==
   dependencies:
-    "@glint/config" "^0.7.0"
-    "@glint/template" "^0.7.0"
+    "@glint/config" "^0.7.2"
+    "@glint/template" "^0.7.2"
 
-"@glint/template@^0.7.0":
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/@glint/template/-/template-0.7.0.tgz#e3d29dce639c69b30272dda57b1a5048f6a13d7e"
-  integrity sha512-H9GeXWYnetFU4/1Y83ixA7tjmjiSEOHtbGmsXGsslQHStvFOBJOXmf9eBhj/sg0ThBzNw7DH+58d972mWp+dVg==
+"@glint/template@^0.7.2":
+  version "0.7.2"
+  resolved "https://registry.yarnpkg.com/@glint/template/-/template-0.7.2.tgz#2382e5b29adaf916ed7a5de731647ea0683fb83b"
+  integrity sha512-aIJm+d4b7JUSm7ZH/VT5BZzc4fhauEkKM7lQ49NH40ebzqIE8UHZPwPiZFvWUy5wPyl/rzkCHII/5zmgSNwUFQ==
 
 "@glint/transform@^0.7.0":
   version "0.7.0"
