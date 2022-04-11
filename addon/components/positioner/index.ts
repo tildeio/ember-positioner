@@ -5,7 +5,13 @@ import { assert } from '@ember/debug';
 import { task } from 'ember-concurrency';
 import { taskFor } from 'ember-concurrency-ts';
 import Ember from 'ember';
-import { Modifier, createPopper, Placement, Instance } from '@popperjs/core';
+import {
+  Modifier,
+  createPopper,
+  Placement,
+  Instance,
+  Obj,
+} from '@popperjs/core';
 import { PositionerContentSignature } from './content';
 
 // Animation properties
@@ -410,7 +416,7 @@ export default class Positioner
     let placement = this.args.placement ?? 'top';
     let offsetDistance = this.args.offsetDistance ?? 7;
     let offsetSkidding = this.args.offsetSkidding ?? 0;
-    let modifiers: Array<Partial<Modifier<unknown, unknown>>> = [
+    let modifiers: Array<Partial<Modifier<unknown, Obj>>> = [
       {
         name: 'offset',
         options: {
@@ -424,7 +430,7 @@ export default class Positioner
      * A modifier whose function runs when Positioner updates.
      * https://popper.js.org/docs/v2/modifiers/
      */
-    let placementUpdater: Partial<Modifier<unknown, unknown>> = {
+    let placementUpdater: Partial<Modifier<unknown, Obj>> = {
       name: 'placementUpdater',
       enabled: true,
       phase: 'write',
