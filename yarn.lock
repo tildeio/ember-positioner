@@ -1219,7 +1219,7 @@
   dependencies:
     babel-plugin-debug-macros "^0.3.4"
 
-"@glint/config@^0.7.2", "@glint/config@^0.7.4":
+"@glint/config@^0.7.4":
   version "0.7.4"
   resolved "https://registry.yarnpkg.com/@glint/config/-/config-0.7.4.tgz#d43874824a5dc96d0263712493d81d7470315b55"
   integrity sha512-md4jRHxNcRzl/7xXtf054H3uuZxpDmQgVphDgk632yrpS2jeYbt312Lhg8kzDj3VaeqdhxqLig7y/q2qlHOZTg==
