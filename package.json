@@ -48,7 +48,7 @@
     "@ember/test-helpers": "^2.6.0",
     "@embroider/test-setup": "^1.5.0",
     "@gavant/glint-template-types": "^0.0.21",
-    "@glint/core": "^0.7.0",
+    "@glint/core": "^0.8.0",
     "@glint/environment-ember-loose": "^0.7.0",
     "@types/ember-qunit": "^5.0.0",
     "@types/ember-resolver": "^5.0.10",
@@ -107,7 +107,7 @@
   },
   "peerDependencies": {
     "@gavant/glint-template-types": "^0.0.21",
-    "@glint/core": "^0.7.0",
+    "@glint/core": "^0.8.0",
     "@glint/environment-ember-loose": "^0.7.0"
   },
   "engines": {
