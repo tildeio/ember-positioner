@@ -1,7 +1,7 @@
 import { action } from '@ember/object';
 import { guidFor } from '@ember/object/internals';
 import { tracked } from '@glimmer/tracking';
-import Component from '@glint/environment-ember-loose/glimmer-component';
+import Component from '@glimmer/component';
 import Ember from 'ember';
 import { assert } from '@ember/debug';
 
@@ -41,7 +41,7 @@ export interface TitleSignature {
     openDelay?: number;
     inline?: boolean;
   };
-  Yields: {
+  Blocks: {
     default: [];
   };
 }

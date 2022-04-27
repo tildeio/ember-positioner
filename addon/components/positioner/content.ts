@@ -1,4 +1,4 @@
-import Component from '@glint/environment-ember-loose/glimmer-component';
+import templateOnlyComponent from '@ember/component/template-only';
 
 export interface PositionerContentSignature {
   Element: HTMLDivElement;
@@ -6,12 +6,14 @@ export interface PositionerContentSignature {
     isHidden: boolean;
     hideArrow?: boolean;
   };
-  Yields: {
+  Blocks: {
     default: [];
   };
 }
 
-export default class PositionerContent extends Component<PositionerContentSignature> {}
+const PositionerContent = templateOnlyComponent<PositionerContentSignature>();
+
+export default PositionerContent;
 
 declare module '@glint/environment-ember-loose/registry' {
   export default interface Registry {
