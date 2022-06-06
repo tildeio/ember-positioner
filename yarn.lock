@@ -1244,7 +1244,7 @@
   dependencies:
     babel-plugin-debug-macros "^0.3.4"
 
-"@glint/config@^0.8.0", "@glint/config@^0.8.2":
+"@glint/config@^0.8.2":
   version "0.8.2"
   resolved "https://registry.yarnpkg.com/@glint/config/-/config-0.8.2.tgz#42e03caf1461f75b2cac758f046dcf4ffb19f11a"
   integrity sha512-waMpF7C53kHzeTua1kWbVFqTWAOHLZDcCHo1BNUH37r1GH5dMlqNjBbVe/t4XcA/8qzUnBnzzSC7oKHc1u0pmA==
@@ -11184,9 +11184,9 @@ webpack@^4.43.0:
     webpack-sources "^1.4.1"
 
 webpack@^5.70.0:
-  version "5.72.1"
-  resolved "https://registry.yarnpkg.com/webpack/-/webpack-5.72.1.tgz#3500fc834b4e9ba573b9f430b2c0a61e1bb57d13"
-  integrity sha512-dXG5zXCLspQR4krZVR6QgajnZOjW2K/djHvdcRaDQvsjV9z9vaW6+ja5dZOYbqBBjF6kGXka/2ZyxNdc+8Jung==
+  version "5.73.0"
+  resolved "https://registry.yarnpkg.com/webpack/-/webpack-5.73.0.tgz#bbd17738f8a53ee5760ea2f59dce7f3431d35d38"
+  integrity sha512-svjudQRPPa0YiOYa2lM/Gacw0r6PvxptHj4FuEKQ2kX05ZLkjbVc5MnPs6its5j7IZljnIqSVo/OsY2X0IpHGA==
   dependencies:
     "@types/eslint-scope" "^3.7.3"
     "@types/estree" "^0.0.51"
