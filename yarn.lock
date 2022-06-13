@@ -1244,7 +1244,7 @@
   dependencies:
     babel-plugin-debug-macros "^0.3.4"
 
-"@glint/config@^0.8.0", "@glint/config@^0.8.2":
+"@glint/config@^0.8.2":
   version "0.8.2"
   resolved "https://registry.yarnpkg.com/@glint/config/-/config-0.8.2.tgz#42e03caf1461f75b2cac758f046dcf4ffb19f11a"
   integrity sha512-waMpF7C53kHzeTua1kWbVFqTWAOHLZDcCHo1BNUH37r1GH5dMlqNjBbVe/t4XcA/8qzUnBnzzSC7oKHc1u0pmA==
@@ -5425,9 +5425,9 @@ eslint-plugin-prettier@^4.0.0:
     prettier-linter-helpers "^1.0.0"
 
 eslint-plugin-qunit@^7.2.0:
-  version "7.2.0"
-  resolved "https://registry.npmjs.org/eslint-plugin-qunit/-/eslint-plugin-qunit-7.2.0.tgz"
-  integrity sha512-ebT6aOpmMj4vchG0hVw9Ukbutk/lgywrc8gc9w9hH2/4WjKqwMlyM7iVwqB7OAXv6gtQMJZuziT0wNjjymAuWA==
+  version "7.3.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-qunit/-/eslint-plugin-qunit-7.3.0.tgz#ea19c6df16b3e231764f93363709172ad3c22bc8"
+  integrity sha512-o80qEsBpnh2hGCLKmNVimPSPY6TP2eyM+wQl9vdOKWJKrQXEgNTMX9mf4X4h3GguaBlmSNnLaPVsycKaZEaGZg==
   dependencies:
     eslint-utils "^3.0.0"
     requireindex "^1.2.0"
