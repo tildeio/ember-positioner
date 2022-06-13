@@ -1107,9 +1107,9 @@
     strip-json-comments "^3.1.1"
 
 "@gavant/glint-template-types@^0.1.0":
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/@gavant/glint-template-types/-/glint-template-types-0.1.2.tgz#1a872add39d4aa5142d783abe0d3dc65b2dc5b68"
-  integrity sha512-hgBMnT1blJd8eSVE2wCahH+oajVJDnTQFsfTT/rsUBuGqOEVkd4lnq9F+3uSYS8oJbJ0+dTyYSOyN+d/NK/b3w==
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/@gavant/glint-template-types/-/glint-template-types-0.1.5.tgz#8208994e43b6ba0097a76f7a778043aeb6901c75"
+  integrity sha512-ASLbIYjLUkHGQHLSRbrFMH8Ndobn+ls54f3k6cv4En0QN55Q3YgR0PKACjVfK+pKWYR1fhm/vBtJBgPi73iXMA==
 
 "@glimmer/component@^1.0.4":
   version "1.1.2"
