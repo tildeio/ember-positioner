@@ -48,7 +48,7 @@
     "@ember/test-helpers": "^2.7.0",
     "@embroider/test-setup": "^1.6.0",
     "@gavant/glint-template-types": "^0.1.0",
-    "@glint/core": "^0.8.0",
+    "@glint/core": "^0.9.1",
     "@glint/environment-ember-loose": "^0.8.0",
     "@types/ember-qunit": "^5.0.0",
     "@types/ember-resolver": "^5.0.10",
