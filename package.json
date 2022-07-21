@@ -29,7 +29,7 @@
     "postpack": "ember ts:clean"
   },
   "dependencies": {
-    "@ember/render-modifiers": "^2.0.0",
+    "@ember/render-modifiers": "^2.0.4",
     "@glimmer/component": "^1.1.2",
     "@glimmer/tracking": "^1.1.2",
     "@popperjs/core": "^2.11.5",
@@ -40,7 +40,7 @@
     "ember-concurrency": "^2.1.0",
     "ember-concurrency-async": "^1.0.0",
     "ember-concurrency-ts": "^0.3.1",
-    "ember-modifier": "^3.0.0",
+    "ember-modifier": "^3.2.7",
     "ember-on-helper": "^0.1.0"
   },
   "devDependencies": {
