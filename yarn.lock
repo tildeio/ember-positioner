@@ -5130,7 +5130,7 @@ ember-source@~4.5.0:
     semver "^7.3.4"
     silent-error "^1.1.1"
 
-ember-template-lint@^4.8.0:
+ember-template-lint@^4.10.1:
   version "4.10.1"
   resolved "https://registry.yarnpkg.com/ember-template-lint/-/ember-template-lint-4.10.1.tgz#2c348187a7bce15f0fdf371f6f3f54e3717b0a0a"
   integrity sha512-uFJ4jjzbYuVKTeTEVqzLDQR7XHFbSLQDZoFC6XZ3OMxX07YArmM78MKBOAJ6ri9fVCd1LD9j99j6qXwUWqWr1g==
