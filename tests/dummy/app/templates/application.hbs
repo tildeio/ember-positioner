@@ -3,24 +3,34 @@
 <h2 id="title">Welcome to Ember</h2>
 <Positioner class="light">
   <:trigger as |positioner|>
-  <button  type="button" {{did-insert positioner.registerAnchor}} {{on "click" positioner.toggle}}>
-  Click me
-  </button>
+    <button
+      type="button"
+      {{did-insert positioner.registerAnchor}}
+      {{on "click" positioner.toggle}}
+    >
+      Click me
+    </button>
   </:trigger>
   <:content>See me</:content>
 </Positioner>
 
-
-<Title @text="More info" @openDelay={{0}} @openDuration={{2000}} @closeDuration={{2000}}>
+<Title
+  @text="More info"
+  @openDelay={{0}}
+  @openDuration={{2000}}
+  @closeDuration={{2000}}
+>
   Title with custom delay and durations
 </Title>
 
-
-<Title @text="More info" >
+<Title @text="More info">
   Title with default delay and durations
 </Title>
 
-<div style="overflow: hidden; background: red; padding: 10px; width: 338px; white-space: nowrap;" {{!-- template-lint-disable no-inline-styles --}}>
+<div
+  {{! template-lint-disable no-inline-styles }}
+  style="overflow: hidden; background: red; padding: 10px; width: 338px; white-space: nowrap;"
+>
   <Title @text="More info" @inline={{false}}>
     Title with inline=false in container with hidden overflow.
   </Title>
