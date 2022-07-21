@@ -5,6 +5,7 @@
 # compiled output
 /dist/
 /tmp/
+/tests/dummy/config/ember-cli-update.json
 
 # dependencies
 /bower_components/

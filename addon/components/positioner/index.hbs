@@ -11,10 +11,10 @@
       {{yield this to="content"}}
     </Positioner::Content>
   {{else}}
-    {{!-- TODO: https://github.com/tildeio/events-app/issues/521
+    {{! TODO: https://github.com/tildeio/events-app/issues/521
     We can eliminate the redundant if/else construction here by using
     the maybe-in-element addon, but it has no types yet, so it causes
-    Glint errors. --}}
+    Glint errors. }}
     {{#in-element this.altContainer insertBefore=null}}
       <Positioner::Content
         @isHidden={{this.isHidden}}
