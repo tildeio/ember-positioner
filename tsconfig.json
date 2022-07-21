@@ -22,29 +22,17 @@
     "module": "es6",
     "experimentalDecorators": true,
     "paths": {
-      "dummy/tests/*": [
-        "tests/*"
-      ],
-      "dummy/*": [
-        "tests/dummy/app/*",
-        "app/*"
-      ],
-      "ember-positioner": [
-        "addon"
-      ],
-      "ember-positioner/*": [
-        "addon/*"
-      ],
-      "ember-positioner/test-support": [
-        "addon-test-support"
-      ],
-      "ember-positioner/test-support/*": [
-        "addon-test-support/*"
-      ],
-      "*": [
-        "types/*"
-      ]
+      "dummy/tests/*": ["tests/*"],
+      "dummy/*": ["tests/dummy/app/*", "app/*"],
+      "ember-positioner": ["addon"],
+      "ember-positioner/*": ["addon/*"],
+      "ember-positioner/test-support": ["addon-test-support"],
+      "ember-positioner/test-support/*": ["addon-test-support/*"],
+      "*": ["types/*"]
     }
+  },
+  "glint": {
+    "environment": ["ember-loose"]
   },
   "include": [
     "app/**/*",
